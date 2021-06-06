@@ -1,5 +1,7 @@
-# キーをシンボルで書き換えてください
-exam = {:subject => "Math", :score => 80}
+exam = {subject: "Math", score: 80}
 
-# キー「:score」の値を出力してください
-puts exam[:score]
+# キー「:grade」の値を出力してください
+puts exam[:grade]
+
+# nilを出力してください
+puts nil
