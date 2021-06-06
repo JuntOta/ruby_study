@@ -1,25 +1,5 @@
-class Article
+# 変数languagesに、複数の文字列を要素に持つ配列を代入してください
+languages = ["日本語","英語","スペイン語"]
 
-  def initialize(author, title, content)
-    @author = author
-    @title = title
-    @content = content
-  end
-
-  def author
-    @author
-  end
-  
-  def title
-    @title
-  end
-
-  def content
-    @content
-  end
-end
-
-article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
-puts "著者： #{article.author}"
-puts "タイトル： #{article.title}"
-puts "本文: #{article.content}"
+# 変数languagesを出力してください
+puts languages
