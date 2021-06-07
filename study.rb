@@ -1,11 +1,8 @@
-# print_infoメソッドを定義してください
-def print_info(item)
+# 引数priceも受け取るように変更してください
+def print_info(item,price)
   puts "わんこでんきへようこそ！"
-  puts "今日は#{item}がセール中です！"
+  puts "今日は#{item}がセール中で#{price}円です"
 end
 
-# 引数を「ヘッドホン」としてメソッドを呼び出してください
-print_info("ヘッドホン")
-
-# 引数を「テレビ」としてメソッドを呼び出してください
-print_info("テレビ")
+# print_infoメソッドを呼び出してください
+print_info("SDカード",1200)
