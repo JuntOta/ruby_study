@@ -1,11 +1,8 @@
-require "date"
+exam = {subject: "Math"}
 
-today = Date.today.wday
-
-day = ["日","月","火","水","木","金","土"]
-
-if today == 0 || 1 || 2 || 3 || 4 || 6
-  puts "今日は#{day[today]}曜日"
+# 条件式にキー「:score」の値を使うif文をつくってください
+if exam[:score]
+  puts "#{exam[:subject]}の結果は#{exam[:score]}点です"
 else
-  puts "今日は金曜日だ！！！"
+  puts "#{exam[:subject]}の結果は分かりません"
 end
