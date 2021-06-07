@@ -1,7 +1,11 @@
-exam = {subject: "Math", score: 80}
+require "date"
 
-# キー「:grade」の値を出力してください
-puts exam[:grade]
+today = Date.today.wday
 
-# nilを出力してください
-puts nil
+day = ["日","月","火","水","木","金","土"]
+
+if today == 0 || 1 || 2 || 3 || 4 || 6
+  puts "今日は#{day[today]}曜日"
+else
+  puts "今日は金曜日だ！！！"
+end
