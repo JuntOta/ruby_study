@@ -9,12 +9,23 @@
 
   <?php
 
-    $scores = array('数学' => 70, '英語' => 90, '国語' => 80);
+    $str = 'progate';
 
-    // この下にforeach文を書いてください
-    foreach($scores as $key => $value) {
-    echo $key."は".$value."点です。";
-    }
+    // strlenを用いて$strの長さをechoしてください
+    echo strlen($str);
+    
+    echo '<br>';
+    
+    $array = array('HTML', 'CSS', 'PHP');
+
+    // countを用いて$arrayの要素数をechoしてください
+    echo count($array);
+    
+    echo '<br>';
+    
+    // randを用いて10から15までのランダムな数字をechoしてください
+    echo rand(10,15);
+    
   ?>
 
 </body>
