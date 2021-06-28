@@ -9,23 +9,15 @@
 
   <?php
 
-    // 関数helloを定義してください
-    function hello() {
-      echo "Hello, world!";
+    // 関数getCircleAreaを定義してください
+    function getCircleArea($radius) {
+    return $radius * $radius * 3;
     }
+    // 関数getCircleAreaを呼び出して、戻り値を変数$circleAreaに代入してください
+    $circleArea = getCircleArea(5);
     
-    
-    // 関数helloを呼び出してください
-    hello();
-    
-    echo '<br>';
-    // 関数printRectangleAreaを定義してください
-    function printRectangleArea($height,$width) {
-      echo $height * $width;
-    }
-    
-    // 引数を(5, 10)としてprintRectangleAreaを呼び出してください
-    printRectangleArea(5,10);
+    // $circleAreaをechoしてください
+    echo $circleArea;
     
   ?>
 
