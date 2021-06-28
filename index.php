@@ -22,12 +22,13 @@
       <div class="form-title">お問い合わせ</div>
       <form method="post" action="sent.php">
         <div class="form-item">名前</div>
-        <!-- この下にinputタグを書いていきましょう -->
-        <input type = "text" name = "name">
-        
+        <input type="text" name="name">
+
         <div class="form-item">内容</div>
-        <!-- この下にtextareaタグを書いていきましょう -->
-        <textarea name = "body"></textarea>
+        <textarea name="body"></textarea>
+
+        <!-- この下に送信ボタンを作りましょう -->
+        <input type = "submit" value = "送信"></input>
         
       </form>
     </div>
