@@ -1,10 +1,26 @@
-require "date"
+class Article
 
-day = Date.today.wday
-days = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"]
+  def initialize(author, title, content)
+    @author = author
+    @title = title
+    @content = content
+  end
 
-if day == 5
-  puts "今日は#{days[day]}だ！！！"
-else
-  puts "今日は#{days[day]}"
+  def author
+    @author
+  end
+
+  def title
+    @title
+  end
+
+  def content
+    @content
+  end
+
 end
+
+article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
+puts "著者: #{article.author}"
+puts "タイトル: #{article.title}"
+puts "本文: #{article.content}"
