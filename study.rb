@@ -1,9 +1,7 @@
-input = gets.to_i
-
-if input <= 0
-  puts "0以下の数字です"
-elsif input <= 10
-  puts "10以下の数字です"
-else
-  puts "10より大きい数字です"
+def in1to10(num, outside_mode)
+  if (num >= 1 && num <= 10) || outside_mode
+    puts "True"
+  else
+    puts "False"
+  end
 end
