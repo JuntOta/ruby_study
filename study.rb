@@ -1,7 +1,9 @@
-def in1to10(num, outside_mode)
-  if (num >= 1 && num <= 10) || outside_mode
-    puts "True"
-  else
-    puts "False"
+def count_evens(nums)
+  count = 0
+  nums.each do |num|
+    if num.even?
+      count += 1
+    end     
   end
+  puts count
 end
